@@ -4,11 +4,12 @@ This is a simple app made with Next.js and Chakra UI that allows you to search f
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-
-### Global State Management
+## Global State Management
 
 This application uses the Context API and useReducer for global state management. This allows us to share state between components without having to pass props down the component tree.
+
+## Getting Started
+
 
 To get started with this application, clone the repository and install the dependencies:
 
