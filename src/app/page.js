@@ -16,7 +16,7 @@ export default function Home() {
       </Text>
       <br />
       <Search/>
-      {profile.name && (<UserProfile/>)}
+      {profile.html_url && (<UserProfile/>)}
       {/* <UserProfile/> */}
     </Container>
   );

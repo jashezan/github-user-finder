@@ -24,13 +24,13 @@ const Repos = ({ repos_url }) => {
           // console.log(data);
         })
         .catch((err) => {
-          toast(reposError);
+          toast(reposError(err.message));
           dispatch({ type: fetchAction.FETCH_ERROR, error: err.message });
           console.log(err);
         });
     } catch (error) {
       dispatch({ type: fetchAction.FETCH_ERROR, error: error.message });
-      toast(reposError);
+      toast(reposError(error.message));
       console.log(error);
     }
   }, [repos_url, toast]);

@@ -14,18 +14,26 @@ export const emptyQuery = {
   isClosable: true,
 };
 
-export const fetchError = {
+export const fetchError = (er) => ({
   title: "Error",
-  description: "An error occurred",
+  description: er,
   status: "error",
   duration: 5000,
   isClosable: true,
-}
+});
 
-export const reposError = {
+export const reposError = (er) => ({
   title: "Error",
-  description: "An error occurred",
+  description: er,
   status: "error",
   duration: 5000,
   isClosable: true,
-}
+});
+
+export const userDeleted = {
+  title: "User deleted",
+  description: "User deleted successfully",
+  status: "success",
+  duration: 5000,
+  isClosable: true,
+};

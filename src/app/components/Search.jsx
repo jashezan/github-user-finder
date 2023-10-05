@@ -50,7 +50,7 @@ const addUserToLocalStorage = (data, username) => {
         })
         .catch((err) => {
           dispatch({ type: fetchAction.FETCH_ERROR, error: err.message });
-          return toast(fetchError);
+          return toast(fetchError(err.message));
         });
     }
   };

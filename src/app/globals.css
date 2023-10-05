@@ -8,3 +8,23 @@ body{
   background-color: #111;
   color: #fff;
 }
+
+/* dark mode thin scrollbar start */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* dark mode thin scrollbar end */
