@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Providers } from "./providers";
+import { UserProvider } from "./context/userContext";
 
 export const metadata = {
   title: "Github user Finder",
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <UserProvider>
+          <Providers>{children}</Providers>
+        </UserProvider>
       </body>
     </html>
   );

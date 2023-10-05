@@ -6,16 +6,9 @@ const Navbar = () => {
   return (
     <Flex justifyContent={"space-between"} py={6} alignItems={"center"}>
       <Box position={"relative"} aspectRatio={5 / 3}>
-        <Image
-          src={
-            "/github.svg"
-          }
-          width={100}
-          height={100}
-          // fill
-          alt="github logo"
-        />
-          
+        <a href="/">
+          <Image src={"/github.svg"} width={70} height={70} alt="github logo" />
+        </a>
       </Box>
       <Box>
         <Button size={"md"} colorScheme="whatsapp">

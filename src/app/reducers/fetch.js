@@ -1,27 +1,33 @@
-export const searchAction = {
+export const fetchInitialState = {
+  loading: false,
+  error: null,
+  data: null,
+};
+
+export const fetchAction = {
   FETCH_START: "FETCH_START",
   FETCH_SUCCESS: "FETCH_SUCCESS",
   FETCH_ERROR: "FETCH_ERROR",
 };
 
-export const searchReducer = (state, action) => {
+export const fetchReducer = (state, action) => {
   switch (action.type) {
-    case searchAction.FETCH_START:
+    case fetchAction.FETCH_START:
       return {
         ...state,
         loading: true,
       };
-    case searchAction.FETCH_SUCCESS:
+    case fetchAction.FETCH_SUCCESS:
       return {
         ...state,
         loading: false,
         data: action.payload,
       };
-    case searchAction.FETCH_ERROR:
+    case fetchAction.FETCH_ERROR:
       return {
         ...state,
         loading: false,
-        error: action.payload,
+        error: action.error,
       };
     default:
       return state;
